@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/*
+@ LeetCode Problem No. - 13. Roman to Integer
+ */
+>>>>>>> LeetCode Problem No.- 13: Roman to Integer
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -18,8 +24,12 @@ public class RomanNumber {
         for (int i = 0; i < s.length(); i++) {
             if (i > 0 && ht.get(s.charAt(i)) > ht.get(s.charAt(i-1))) {
                 roman_num += ht.get(s.charAt(i)) - 2 * ht.get(s.charAt(i - 1));
+<<<<<<< HEAD
             }
             else {
+=======
+            } else {
+>>>>>>> LeetCode Problem No.- 13: Roman to Integer
                 roman_num += ht.get(s.charAt(i));
             }
         }
